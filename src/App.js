@@ -29,8 +29,6 @@ const EntertainmentApp = () => {
     { value: 'chill', label: 'Chill', emoji: '🌙', color: 'from-slate-400 to-gray-400', bgGlow: 'shadow-slate-200' }
   ];
 
-  const genres = ['Action', 'Comedy', 'Drama', 'Horror', 'Romance', 'Sci-Fi', 'Fantasy', 'Thriller', 'Documentary', 'Animation'];
-  const languages = ['English', 'Japanese', 'Korean', 'Spanish', 'French', 'German', 'Italian', 'Hindi', 'Mandarin', 'Any'];
 
   // Auto-detect region on component mount
   useEffect(() => {
