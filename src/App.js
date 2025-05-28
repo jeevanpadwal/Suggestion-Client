@@ -131,7 +131,7 @@ const EntertainmentApp = () => {
       };
 
       // Call backend API
-      const response = await fetch('http://localhost:5000/api/recommend', {
+      const response = await fetch('https://suggestions-97ci.onrender.com/api/recommend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
