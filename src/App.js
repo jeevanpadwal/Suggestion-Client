@@ -347,7 +347,7 @@ const EntertainmentApp = () => {
 
           {/* Mood Selection - Optional */}
           <div className="mb-8">
-            <label className="block text-lg font-bold text-white mb-4">Quick Mood Selection (Optional) ✨</label>
+            <label className="block text-lg font-bold text-white mb-4">Quick Mood Selection (opt.)✨</label>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {moods.map((moodOption) => (
                 <button
@@ -394,7 +394,7 @@ const EntertainmentApp = () => {
   <div>
     <label className="block text-lg font-bold text-white mb-3 flex items-center">
       <Globe className="w-5 h-5 mr-2 text-green-400" />
-      Language 🗣️
+      Language (opt.)🗣️
     </label>
     <input
       type="text"
@@ -407,7 +407,7 @@ const EntertainmentApp = () => {
   <div>
     <label className="block text-lg font-bold text-white mb-3 flex items-center">
       <Film className="w-5 h-5 mr-2 text-orange-400" />
-      Genre 🎭
+      Genre (opt.)🎭
     </label>
     <input
       type="text"
@@ -420,7 +420,7 @@ const EntertainmentApp = () => {
   <div>
     <label className="block text-lg font-bold text-white mb-3 flex items-center">
       <Calendar className="w-5 h-5 mr-2 text-purple-400" />
-      Year 📅
+      Year (opt.)📅
     </label>
     <input
       type="number"
