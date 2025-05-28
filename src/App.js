@@ -392,55 +392,49 @@ const EntertainmentApp = () => {
           </div>
 
           {/* Optional Preferences */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div>
-              <label className="block text-lg font-bold text-white mb-3 flex items-center">
-                <Globe className="w-5 h-5 mr-2 text-green-400" />
-                Language 🗣️
-              </label>
-              <select
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
-                className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white"
-              >
-                <option value="" className="bg-gray-800">Any Language</option>
-                {languages.map(lang => (
-                  <option key={lang} value={lang} className="bg-gray-800">{lang}</option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="block text-lg font-bold text-white mb-3 flex items-center">
-                <Film className="w-5 h-5 mr-2 text-orange-400" />
-                Genre 🎭
-              </label>
-              <select
-                value={genre}
-                onChange={(e) => setGenre(e.target.value)}
-                className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white"
-              >
-                <option value="" className="bg-gray-800">Any Genre</option>
-                {genres.map(g => (
-                  <option key={g} value={g} className="bg-gray-800">{g}</option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="block text-lg font-bold text-white mb-3 flex items-center">
-                <Calendar className="w-5 h-5 mr-2 text-purple-400" />
-                Year 📅
-              </label>
-              <input
-                type="number"
-                placeholder="Any Year"
-                value={year}
-                onChange={(e) => setYear(e.target.value)}
-                min="1900"
-                max="2025"
-                className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white placeholder-white/70"
-              />
-            </div>
-          </div>
+<div className="grid md:grid-cols-3 gap-6 mb-8">
+  <div>
+    <label className="block text-lg font-bold text-white mb-3 flex items-center">
+      <Globe className="w-5 h-5 mr-2 text-green-400" />
+      Language 🗣️
+    </label>
+    <input
+      type="text"
+      placeholder="Any Language"
+      value={language}
+      onChange={(e) => setLanguage(e.target.value)}
+      className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white placeholder-white/70"
+    />
+  </div>
+  <div>
+    <label className="block text-lg font-bold text-white mb-3 flex items-center">
+      <Film className="w-5 h-5 mr-2 text-orange-400" />
+      Genre 🎭
+    </label>
+    <input
+      type="text"
+      placeholder="Any Genre"
+      value={genre}
+      onChange={(e) => setGenre(e.target.value)}
+      className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white placeholder-white/70"
+    />
+  </div>
+  <div>
+    <label className="block text-lg font-bold text-white mb-3 flex items-center">
+      <Calendar className="w-5 h-5 mr-2 text-purple-400" />
+      Year 📅
+    </label>
+    <input
+      type="number"
+      placeholder="Any Year"
+      value={year}
+      onChange={(e) => setYear(e.target.value)}
+      min="1900"
+      max="2025"
+      className="w-full px-6 py-4 rounded-xl border border-white/30 focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-white/10 backdrop-blur-sm text-white placeholder-white/70"
+    />
+  </div>
+</div>
 
           {/* Get Recommendations Button */}
           <button
