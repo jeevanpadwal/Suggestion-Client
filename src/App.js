@@ -621,7 +621,7 @@ const EntertainmentApp = () => {
         <div className="text-center mt-16 text-purple-200">
           <div className="text-4xl mb-4">✨</div>
           <p className="text-lg font-medium">Made with 💜 for entertainment lovers</p>
-          <p className="text-sm mt-2 opacity-75">Powered by AI • Personalized for you</p>
+          <p className="text-sm mt-2 opacity-75">Powered by G1 • Personalized for you</p>
         </div>
       </div>
 
