@@ -626,7 +626,7 @@ const EntertainmentApp = () => {
       </div>
 
       {/* Custom CSS for animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0% { transform: translateY(0px) scale(1); opacity: 1; }
           100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
