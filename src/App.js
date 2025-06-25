@@ -129,7 +129,7 @@ const EntertainmentApp = () => {
       };
 
       // Call backend API
-      const response = await fetch('https://suggestions-production-80b8.up.railway.app/api/recommend', {
+      const response = await fetch('suggestionserver-fsc8bkhfb5fkf5ee.centralindia-01.azurewebsites.net/api/recommend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
